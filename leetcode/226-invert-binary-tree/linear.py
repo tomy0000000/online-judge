@@ -1,7 +1,7 @@
 # Let n be the number of nodes in the tree
 #
 # Time: O(n)
-# Space: O(n)
+# Space: O(1)
 
 from typing import Optional
 
