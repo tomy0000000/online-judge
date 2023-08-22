@@ -1,0 +1,20 @@
+---
+#
+# https://clang.llvm.org/docs/ClangFormatStyleOptions.html
+#
+
+# Use C/C++ as the language
+Language:      Cpp
+
+# Inherit our style from LLVM
+BasedOnStyle:  LLVM
+
+# Use 4 spaces as our indent width
+IndentWidth:   4
+
+# Reformat lines to be under 80 characters
+ColumnLimit:   80
+
+# Do not allow single-line functions (unless empty)
+AllowShortFunctionsOnASingleLine: Empty
+---
