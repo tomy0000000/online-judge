@@ -1,5 +1,11 @@
+# Let n be the length of nums
+#
+# Time: O(n)
+# Space: O(1)
+
+
 class Solution:
-    def search(self, nums: List[int], target: int) -> bool:
+    def search(self, nums: list[int], target: int) -> bool:
         start = 0
         end = len(nums) - 1
         while True:
