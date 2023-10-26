@@ -1,6 +1,11 @@
+# Let n be the length of s.
+#
+# Time: O(n)
+# Space: O(1)
+
+
 class Solution:
     def integerBreak(self, n: int) -> int:
-        
         if n == 2:
             return 1
         if n == 3:
@@ -12,4 +17,4 @@ class Solution:
             rest -= 3
             num_of_threes += 1
 
-        return 3 ** num_of_threes * rest
+        return 3**num_of_threes * rest
