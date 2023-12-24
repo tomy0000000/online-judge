@@ -1,15 +1,18 @@
+# Time: O(n)
+# Space: O(n)
+
+
 class Solution:
     def minSteps(self, n: int) -> int:
-        
         if n == 1:
             return 0
 
         # Get divisors
         divisor = []
-        for i in range(1, n+1):
-            if n%i == 0:
+        for i in range(1, n + 1):
+            if n % i == 0:
                 divisor.append(i)
-        
+
         if len(divisor) == 2:
             # Prime number
             return n
