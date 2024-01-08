@@ -1,8 +1,9 @@
 {
   "plugins": ["prettier-plugin-sql"],
+  "keywordCase": "upper",
   "overrides": [
     {
-      "files": "mysql.sql",
+      "files": "mysql*.sql",
       "options": {
         "language": "mysql"
       }
