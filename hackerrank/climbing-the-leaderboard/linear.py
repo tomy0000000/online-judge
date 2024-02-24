@@ -1,5 +1,10 @@
 #!/bin/python3
 
+# Let m be the length of the ranked and n be the length of the player
+#
+# Time: O(m + n)
+# Space: O(1)
+
 import os
 
 #
