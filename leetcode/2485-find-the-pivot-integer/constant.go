@@ -1,7 +1,7 @@
 // Time: O(1)
 // Space: O(1)
 
-package main
+package onlinejudge
 
 import "math"
 
