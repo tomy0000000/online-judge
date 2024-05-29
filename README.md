@@ -1,9 +1,8 @@
 # Online Judge
-| Site      | Language |
-| --------- | -------- |
-| LeetCode  | Bash     |
-| LeetCode  | Python 3 |
-| UVa       | C++      |
-| ZeroJudge | C++      |
-| ZeroJudge | Python 3 |
 
+⌨️⚖️ My online judge submissions
+
+- [LeetCode](https://leetcode.com/)
+- [UVa](https://onlinejudge.org/)
+- [ZeroJudge](https://zerojudge.tw/)
+- [Hackerrank](https://www.hackerrank.com/)
