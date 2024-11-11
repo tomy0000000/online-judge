@@ -3,6 +3,7 @@
 # Time: O(n)
 # Space: O(n)
 
+from collections import deque
 from typing import Optional
 
 
@@ -19,23 +20,19 @@ class Solution:
         if not root:
             return []
 
-        queue = [root]
-        root.level = 0
+        queue = deque([(root, 0)])
         ans = []
 
         while queue:
-            node = queue.pop(0)
-            level = node.level
+            node, level = queue.popleft()
 
-            if not queue or queue[0].level != level:
+            if not queue or queue[0][1] != level:
                 ans.append(node.val)
 
             if node.left:
-                node.left.level = level + 1
-                queue.append(node.left)
+                queue.append((node.left, level + 1))
 
             if node.right:
-                node.right.level = level + 1
-                queue.append(node.right)
+                queue.append((node.right, level + 1))
 
         return ans
