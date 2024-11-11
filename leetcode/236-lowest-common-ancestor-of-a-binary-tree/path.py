@@ -1,4 +1,4 @@
-# Let n be the length of s.
+# Let n be the number of nodes in the binary tree.
 #
 # Time: O(log(n))
 # Space: O(log(n))
