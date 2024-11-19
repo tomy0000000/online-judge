@@ -7,7 +7,7 @@
 class Solution:
     def combinationSum(self, candidates: list[int], target: int) -> list[list[int]]:
         if target == 0:
-            return [tuple()]
+            return [[]]
         elif target < 0:
             return []
 
@@ -16,6 +16,6 @@ class Solution:
         res = set()
         for i, n in enumerate(candidates):
             for comb in self.combinationSum(candidates[i:], target - n):
-                res.add(comb + (n,))
+                res.add(tuple(comb + [n]))
 
-        return res
+        return [list(tup) for tup in res]
