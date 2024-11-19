@@ -22,7 +22,7 @@ class Solution:
     def rebuildNode(self, node_list: list[str]):
         last = None
         for each in node_list:
-            tmp = ListNode(each)
+            tmp = ListNode(int(each))
             if last:
                 tmp.next = last
             last = tmp
